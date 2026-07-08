@@ -17,3 +17,4 @@ jobs:
       app_name: "namerequest"
       working_directory: "./app"
       codecov_flag: ""
+      pnpm_version: 11.9.0
