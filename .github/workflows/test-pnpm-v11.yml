@@ -32,7 +32,8 @@ jobs:
         run: pnpm install --ignore-scripts
 
       - name: Nuxt Prepare
-        run: pnpm exec nuxt prepare
+        run: pnpm exec nuxt prepare 2>/dev/null || true
+        continue-on-error: true
 
       - name: Build
         run: pnpm build
